@@ -21,10 +21,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 MY_STATUS_TITLE="Guto Status Page"
 
 # Link for the homepage button
-MY_HOMEPAGE_URL="https://github.com/Cyclenerd/static_status"
+MY_HOMEPAGE_URL="https://github.com/gutocarvalho/shellstatus"
 
 # Text for the homepage button
-MY_HOMEPAGE_TITLE="Homepage"
+MY_HOMEPAGE_TITLE="Github"
 
 # Shortcut to place the configuration file in a folder.
 # Save it without / at the end.
@@ -76,7 +76,7 @@ MY_STATUS_STYLESHEET="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4
 MY_STATUS_FONTAWESOME="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
 
 # A footer
-MY_STATUS_FOOTER='Powered by <a href="https://github.com/Cyclenerd/static_status">static_status</a>'
+MY_STATUS_FOOTER='Based on <a href="https://github.com/Cyclenerd/static_status">static_status</a> by <a href="https://github.com/Cyclenerd>Cyclenerd</a>'
 
 # Lock file to prevent duplicate execution.
 # If this file exists, status.sh script is terminated.
@@ -425,6 +425,7 @@ function page_header() {
 			</a>
 		</span>
 	</h1>
+        <p class="text-muted">Last check: $MY_DATE_TIME</p>
 </div>
 
 <div class="d-sm-none d-md-none d-lg-none d-xl-none my-3">
